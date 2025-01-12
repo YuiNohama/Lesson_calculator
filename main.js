@@ -29,16 +29,16 @@ $(document).ready(function(){
         for (let i = 0; i < sign.length; i++){
             switch(sign[i]){
                 case "+":
-                    result = result + numbers[i+1]
+                    result = Math.round((result + numbers[i+1])* 10)/10
                     break;
                 case "-":
-                    result = result - numbers[i+1]
+                    result = Math.round((result - numbers[i+1])* 10)/10
                     break;
                 case "/":
                     result = result / numbers[i+1]
                     break;
                 case "*":
-                    result = result * numbers[i+1]
+                    result = Math.round((result * numbers[i+1])* 10)/10
                     break;
             }
         }
